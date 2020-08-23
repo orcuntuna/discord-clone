@@ -32,7 +32,7 @@ function SideBar({ type }) {
         <div className={styles.sectionTitle}>
           <SectionTitle title={'Direct Messages'} icon={<AddSVG />} />
         </div>
-        <div class={styles.users}>
+        <div className={styles.users}>
           <UserCard
             photo={
               'https://cdn.discordapp.com/avatars/318811068824813570/da919aa49e0e42e324cdabf2277cf234.png?size=256'

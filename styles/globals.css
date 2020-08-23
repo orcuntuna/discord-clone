@@ -52,6 +52,8 @@
   --deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 100%, 0.3);
   --deprecated-text-input-bg: rgba(0, 0, 0, 0.1);
   --deprecated-text-input-border: rgba(0, 0, 0, 0.3);
+  --context-menu-background-hover: #5c6fb1;
+  --context-menu-text-hover: #FFFFFF;
 }
 
 html,
@@ -74,4 +76,34 @@ a {
 .ant-tooltip-inner {
   border-radius: 6px;
   user-select: none;
+}
+
+.user-context-menu .ant-menu {
+  box-shadow: var(--elevation-high);
+  background: var(--background-floating);
+  border-radius: 4px;
+  border: none;
+  min-width: 188px;
+  max-width: 320px;
+  padding: 6px 8px;
+}
+
+.user-context-menu .ant-menu .ant-menu-item {
+  color: var(--interactive-normal);
+  border-color: var(--interactive-normal);
+  position: relative;
+  margin: 2px 0;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  min-height: 32px;
+  padding: 8px 8px;
+  height: auto;
+  line-height: 20px;
+}
+
+.user-context-menu .ant-menu .ant-menu-item:hover {
+  background-color: var(--context-menu-background-hover);
+  color: var(--context-menu-text-hover);
 }
