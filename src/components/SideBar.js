@@ -53,20 +53,22 @@ function SideBar({ type }) {
             }
             name={'Rick Sanchez'}
             status={'idle'}
+            customStatus={'Playing GTA V'}
           />
           <UserCard
             photo={
               'https://cdn.discordapp.com/avatars/612040334238548073/06248bb9255804d75a2a148604bdc390.png?size=256'
             }
             name={'samet'}
-            status={'doNotDisturb'}
+            status={'offline'}
           />
           <UserCard
             photo={
               'https://discord.com/assets/dd4dbc0016779df1378e7812eabaa04d.png'
             }
             name={'furkan'}
-            status={'offline'}
+            status={'doNotDisturb'}
+            customStatus={'Playing Minecraft'}
           />
           <UserCard
             photo={

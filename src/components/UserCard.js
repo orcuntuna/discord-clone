@@ -30,6 +30,7 @@ function UserCard({ name, photo, status, customStatus }) {
         </div>
         <div className={styles.info}>
           <span className={styles.name}>{name}</span>
+          {customStatus && <div className={styles.customStatus}>{customStatus}</div>}
         </div>
       </div>
     </Dropdown>
