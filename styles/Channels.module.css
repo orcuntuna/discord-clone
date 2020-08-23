@@ -1,0 +1,8 @@
+.container {
+  overflow: hidden auto;
+  user-select: none;
+  padding: 12px 0 0;
+  background-color: var(--background-tertiary);
+  width: 72px;
+  height: 100vh;
+}
