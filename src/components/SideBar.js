@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from '../../styles/SideBar.module.css'
+import SideBarButton from './SideBarButton'
+import HelloSVG from '../assets/svg/hello.svg'
+import NitroSVG from '../assets/svg/nitro.svg'
 
 function SideBar({ type }) {
   function renderChannelType() {
@@ -9,15 +12,21 @@ function SideBar({ type }) {
 
   function renderMeType() {
     return (
-      <div className={styles.search}>
-        <input
-          className={styles.input}
-          type={'text'}
-          name={'q'}
-          placeholder={'Find or start a conversation'}
-          autoComplete={'off'}
-        />
-      </div>
+      <React.Fragment>
+        <div className={styles.search}>
+          <input
+            className={styles.input}
+            type={'text'}
+            name={'q'}
+            placeholder={'Find or start a conversation'}
+            autoComplete={'off'}
+          />
+        </div>
+        <div className={styles.buttons}>
+          <SideBarButton url={'/'} text={'Friends'} icon={<HelloSVG />} isActive={true} />
+          <SideBarButton url={'nitro'} text={'Nitro'} icon={<NitroSVG />} />
+        </div>
+      </React.Fragment>
     )
   }
 

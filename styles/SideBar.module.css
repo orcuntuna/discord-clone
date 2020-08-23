@@ -2,6 +2,8 @@
   width: 240px;
   height: 100vh;
   background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
 }
 
 .search {
@@ -34,4 +36,10 @@
 
 .input::placeholder {
   color: var(--text-muted);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
 }
