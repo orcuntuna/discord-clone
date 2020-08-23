@@ -73,4 +73,5 @@ a {
 
 .ant-tooltip-inner {
   border-radius: 6px;
+  user-select: none;
 }
