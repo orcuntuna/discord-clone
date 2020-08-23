@@ -4,6 +4,7 @@
   background-color: var(--background-secondary);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .search {
@@ -51,4 +52,11 @@
 
 .users {
   padding: 8px 10px 0;
+  margin-bottom: 52px;
+}
+
+.quickPanel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

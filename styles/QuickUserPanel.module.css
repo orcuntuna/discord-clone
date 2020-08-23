@@ -1,0 +1,84 @@
+.panel {
+  height: 52px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--background-secondary-alt);
+  width: 240px;
+  z-index: 20;
+}
+
+.photoBox {
+  position: relative;
+}
+
+.photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 12px;
+}
+
+.status {
+  position: absolute;
+  right: 9px;
+  bottom: -4px;
+  z-index: 10;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--header-primary);
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.userId {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--header-secondary);
+  line-height: 13px;
+}
+
+.buttons {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+  color: var(--interactive-normal);
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--interactive-hover);
+  background-color: var(--background-modifier-selected);
+}

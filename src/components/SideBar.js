@@ -7,6 +7,7 @@ import NitroSVG from '../assets/svg/nitro.svg'
 import AddSVG from '../assets/svg/add-mini.svg'
 import SectionTitle from './SectionTitle'
 import UserCard from './UserCard'
+import QuickUserPanel from './QuickUserPanel'
 
 function SideBar({ type }) {
   function renderChannelType() {
@@ -41,9 +42,7 @@ function SideBar({ type }) {
             status={'online'}
           />
           <UserCard
-            photo={
-              'https://discord.com/assets/1cbd08c76f8af6dddce02c5138971129.png'
-            }
+            photo={'https://discord.com/assets/1cbd08c76f8af6dddce02c5138971129.png'}
             name={'mustafaisik'}
             status={'offline'}
           />
@@ -63,9 +62,7 @@ function SideBar({ type }) {
             status={'offline'}
           />
           <UserCard
-            photo={
-              'https://discord.com/assets/dd4dbc0016779df1378e7812eabaa04d.png'
-            }
+            photo={'https://discord.com/assets/dd4dbc0016779df1378e7812eabaa04d.png'}
             name={'furkan'}
             status={'doNotDisturb'}
             customStatus={'Playing Minecraft'}
@@ -76,6 +73,16 @@ function SideBar({ type }) {
             }
             name={'Yusuf Can'}
             status={'online'}
+          />
+        </div>
+        <div className={styles.quickPanel}>
+          <QuickUserPanel
+            user_id={8292}
+            photo={
+              'https://cdn.discordapp.com/avatars/481938565014487041/cdd2b4d773e83c7d74f447ebed7225db.png?size=256'
+            }
+            name={'orçun'}
+            status={'doNotDisturb'}
           />
         </div>
       </React.Fragment>
