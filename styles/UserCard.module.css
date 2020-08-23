@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+  height: 42px;
+  padding: 0 8px;
+  color: var(--channels-default);
+  margin-bottom: 2px;
+  user-select: none;
+}
+
+.card:hover {
+  color: var(--interactive-hover);
+  background-color: var(--background-modifier-hover);
+  cursor: pointer;
+}
+
+.photoBox {
+  position: relative;
+}
+
+.photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 12px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.status {
+  position: absolute;
+  right: 9px;
+  bottom: -4px;
+  z-index: 10;
+}

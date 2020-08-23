@@ -1,0 +1,29 @@
+.line{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.title{
+  flex: 1;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--channels-default);
+}
+
+.line:hover .title{
+  color: var(--interactive-hover);
+}
+
+.line svg {
+  width: 16px;
+  height: 16px;
+  color: var(--interactive-normal);
+}

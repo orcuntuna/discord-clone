@@ -1,0 +1,22 @@
+.circle {
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--background-secondary);
+  border-radius: 20px;
+}
+
+.online {
+  background-color: #43b581;
+}
+
+.offline {
+  background-color: #747f8d;
+}
+
+.doNotDisturb {
+  background-color: #f04747;
+}
+
+.idle {
+  background-color: #faa61a;
+}
