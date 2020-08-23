@@ -1,0 +1,27 @@
+.container {
+  overflow: hidden auto;
+  user-select: none;
+  padding: 12px 0 0;
+  background-color: var(--background-tertiary);
+  width: 72px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.separator {
+  height: 2px;
+  width: 32px;
+  border-radius: 1px;
+  background-color: var(--background-modifier-accent);
+  margin-bottom: 8px;
+}
+
+.logoSVG {
+  color: var(--header-primary);
+}
+
+.iconSVG {
+  color: var(--server-list-icon-color);
+}

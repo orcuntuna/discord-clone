@@ -1,0 +1,87 @@
+.item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--background-primary);
+}
+
+.customBox:hover {
+  background-color: var(--server-list-icon-color);
+}
+
+.customBox:hover svg {
+  color: var(--header-primary);
+}
+
+.box:hover {
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.active {
+  border-radius: 16px;
+}
+
+.logo {
+  background-color: var(--logo-background);
+}
+
+.tooltip {
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tooltipText {
+  display: block;
+  padding: 2px 6px;
+}
+
+.activeLine {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 40px;
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+  margin-top: 4px;
+  background-color: var(--header-primary);
+}
+
+.hoverLine {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 22px;
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+  margin-top: 13px;
+  background-color: var(--header-primary);
+}
+
+.box:hover .hoverLine {
+  display: block;
+}
+
+.box img {
+  width: 48px;
+  height: 48px;
+}

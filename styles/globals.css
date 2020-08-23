@@ -1,4 +1,6 @@
 :root {
+  --logo-background: #7289da;
+  --server-list-icon-color: #43b581;
   --header-primary: #fff;
   --header-secondary: #b9bbbe;
   --text-normal: #dcddde;
@@ -65,4 +67,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.ant-tooltip-inner{
+  border-radius: 6px;
 }

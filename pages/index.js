@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Channels from '../src/components/Channels'
+import Servers from '../src/components/Servers'
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
         <title>Discord Homepage</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Channels />
+      <Servers />
     </div>
   )
 }
