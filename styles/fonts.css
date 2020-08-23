@@ -1,62 +1,62 @@
 @font-face {
-  font-family: 'Whitney Medium';
+  font-family: 'Whitney';
   font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Medium'), url('../src/assets/fonts/whitneymedium.woff') format('woff');
+  font-weight: 500;
+  src: local('Whitney'), url('../src/assets/fonts/whitneymedium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Medium Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Medium Italic'), url('../src/assets/fonts/whitneymediumitalic.woff') format('woff');
+  font-family: 'Whitney';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Whitney'), url('../src/assets/fonts/whitneymediumitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Bold';
+  font-family: 'Whitney';
   font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Bold'), url('../src/assets/fonts/whitneybold.woff') format('woff');
+  font-weight: 700;
+  src: local('Whitney'), url('../src/assets/fonts/whitneybold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Semibold Regular';
+  font-family: 'Whitney';
   font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Semibold Regular'), url('../src/assets/fonts/whitneysemibold.woff') format('woff');
+  font-weight: 600;
+  src: local('Whitney'), url('../src/assets/fonts/whitneysemibold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Book Regular';
+  font-family: 'Whitne';
   font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Book Regular'), url('../src/assets/fonts/whitneybook.woff') format('woff');
+  font-weight: 400;
+  src: local('Whitney'), url('../src/assets/fonts/whitneybook.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Light Regular';
+  font-family: 'Whitney';
   font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Light Regular'), url('../src/assets/fonts/whitneylight.woff') format('woff');
+  font-weight: 300;
+  src: local('Whitney'), url('../src/assets/fonts/whitneylight.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Semibold Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Semibold Italic'), url('../src/assets/fonts/whitneySemiboldItalic.woff') format('woff');
+  font-family: 'Whitney';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Whitney'), url('../src/assets/fonts/whitneySemiboldItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Book Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Book Italic'), url('../src/assets/fonts/whitneybookitalic.woff') format('woff');
+  font-family: 'Whitney';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Whitney'), url('../src/assets/fonts/whitneybookitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Whitney Light Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Whitney Light Italic'), url('../src/assets/fonts/whitneylightitalic.woff') format('woff');
+  font-family: 'Whitney';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Whitney'), url('../src/assets/fonts/whitneylightitalic.woff') format('woff');
 }

@@ -3,6 +3,7 @@ import styles from '../../styles/Server.module.css'
 import Link from 'next/link'
 import cn from 'classnames'
 import { Tooltip } from 'antd'
+import PropTypes from 'prop-types'
 
 function Server({ name, url, children, isActive = false, isLogo = false, isCustomAction = false }) {
   return (
@@ -30,6 +31,15 @@ function Server({ name, url, children, isActive = false, isLogo = false, isCusto
       </Link>
     </div>
   )
+}
+
+Server.propTypes = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.element,
+  isActive: PropTypes.bool,
+  isLogo: PropTypes.bool,
+  isCustomAction: PropTypes.bool,
 }
 
 export default Server
