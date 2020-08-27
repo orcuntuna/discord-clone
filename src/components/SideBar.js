@@ -8,16 +8,26 @@ import AddSVG from '../assets/svg/add-mini.svg'
 import SectionTitle from './SectionTitle'
 import UserCard from './UserCard'
 import QuickUserPanel from './QuickUserPanel'
+import ChevronDownSVG from '../assets/svg/chevron-down.svg'
 
 function SideBar({ type }) {
   function renderChannelType() {
-    return <p>channel</p>
+    return (
+      <React.Fragment>
+        <div className={styles.top}>
+          <div className={styles.channelInfoBar}>
+            <div className={styles.channelTitle}>Yazılım Kulübü</div>
+            <ChevronDownSVG />
+          </div>
+        </div>
+      </React.Fragment>
+    )
   }
 
   function renderMeType() {
     return (
       <React.Fragment>
-        <div className={styles.search}>
+        <div className={styles.top}>
           <input
             className={styles.input}
             type={'text'}
