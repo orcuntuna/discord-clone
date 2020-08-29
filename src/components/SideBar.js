@@ -33,23 +33,25 @@ function SideBar({ type }) {
             <ChevronDownSVG />
           </div>
         </div>
-        <div className={styles.channels}>
-          <div className={styles.sectionTitleChannels}>
-            <SectionTitle title={'Text Channels'} icon={<AddSVG />} />
+        <div className="scrollable">
+          <div className={styles.channels}>
+            <div className={styles.sectionTitleChannels}>
+              <SectionTitle title={'Text Channels'} icon={<AddSVG />} />
+            </div>
+            <ChannelCard type={'text'} name={'sun'} isActive={true} />
+            <div className={styles.sectionTitleChannels}>
+              <SectionTitle title={'Voice Channels'} icon={<AddSVG />} />
+            </div>
+            <ChannelCard type={'voice'} name={'Mercury'} />
+            <ChannelCard type={'voice'} name={'Venus'} />
+            <ChannelCard type={'voice'} name={'Earth'} />
+            <ChannelCard type={'voice'} name={'Mars'} />
+            <ChannelCard type={'voice'} name={'Jupiter'} />
+            <ChannelCard type={'voice'} name={'Saturn'} />
+            <ChannelCard type={'voice'} name={'Uranus'} />
+            <ChannelCard type={'voice'} name={'Neptun'} />
+            <ChannelCard type={'voice'} name={'Pluto'} />
           </div>
-          <ChannelCard type={'text'} name={'sun'} isActive={true} />
-          <div className={styles.sectionTitleChannels}>
-            <SectionTitle title={'Voice Channels'} icon={<AddSVG />} />
-          </div>
-          <ChannelCard type={'voice'} name={'Mercury'} />
-          <ChannelCard type={'voice'} name={'Venus'} />
-          <ChannelCard type={'voice'} name={'Earth'} />
-          <ChannelCard type={'voice'} name={'Mars'} />
-          <ChannelCard type={'voice'} name={'Jupiter'} />
-          <ChannelCard type={'voice'} name={'Saturn'} />
-          <ChannelCard type={'voice'} name={'Uranus'} />
-          <ChannelCard type={'voice'} name={'Neptun'} />
-          <ChannelCard type={'voice'} name={'Pluto'} />
         </div>
         <div className={styles.quickPanel}>
           <QuickUserPanel
@@ -77,23 +79,25 @@ function SideBar({ type }) {
             autoComplete={'off'}
           />
         </div>
-        <div className={styles.buttons}>
-          <SideBarButton url={'/'} text={'Friends'} icon={<HelloSVG />} isActive={true} />
-          <SideBarButton url={'nitro'} text={'Nitro'} icon={<NitroSVG />} />
-        </div>
-        <div className={styles.sectionTitle}>
-          <SectionTitle title={'Direct Messages'} icon={<AddSVG />} />
-        </div>
-        <div className={styles.users}>
-          {directMessages.map((item) => (
-            <UserCard
-              key={`dm-${item.id}`}
-              photo={item.photo}
-              name={item.name}
-              status={item.status}
-              customStatus={item.customStatus}
-            />
-          ))}
+        <div className="scrollable">
+          <div className={styles.buttons}>
+            <SideBarButton url={'/'} text={'Friends'} icon={<HelloSVG />} isActive={true} />
+            <SideBarButton url={'nitro'} text={'Nitro'} icon={<NitroSVG />} />
+          </div>
+          <div className={styles.sectionTitle}>
+            <SectionTitle title={'Direct Messages'} icon={<AddSVG />} />
+          </div>
+          <div className={styles.users}>
+            {directMessages.map((item) => (
+              <UserCard
+                key={`dm-${item.id}`}
+                photo={item.photo}
+                name={item.name}
+                status={item.status}
+                customStatus={item.customStatus}
+              />
+            ))}
+          </div>
         </div>
         <div className={styles.quickPanel}>
           <QuickUserPanel
