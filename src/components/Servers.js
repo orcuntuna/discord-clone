@@ -33,6 +33,7 @@ function Servers() {
           url={`/channels/${server.id}`}
           name={server.name}
           key={`server-${server.id}`}
+          isChannel={true}
         >
           <img src={server.image} />
         </Server>

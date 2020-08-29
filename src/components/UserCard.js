@@ -5,9 +5,9 @@ import styles from '../../styles/UserCard.module.css'
 import StatusCircle from './StatusCircle'
 
 function UserCard({ name, photo, status, customStatus }) {
-  function rightClickMenu() {
+  function contextMenu() {
     return (
-      <div className="user-context-menu">
+      <div className="custom-context-menu">
         <Menu>
           <Menu.Item key="1">Profile</Menu.Item>
           <Menu.Item key="2">Call</Menu.Item>
@@ -20,7 +20,7 @@ function UserCard({ name, photo, status, customStatus }) {
   }
 
   return (
-    <Dropdown overlay={rightClickMenu} trigger={['contextMenu']}>
+    <Dropdown overlay={contextMenu} trigger={['contextMenu']}>
       <div className={styles.card}>
         <div className={styles.photoBox}>
           <div className={styles.status}>

@@ -86,7 +86,7 @@ a {
   user-select: none;
 }
 
-.user-context-menu .ant-menu {
+.custom-context-menu .ant-menu {
   box-shadow: var(--elevation-high);
   background: var(--background-floating);
   border-radius: 4px;
@@ -96,7 +96,7 @@ a {
   padding: 6px 8px;
 }
 
-.user-context-menu .ant-menu .ant-menu-item {
+.custom-context-menu .ant-menu .ant-menu-item {
   color: var(--interactive-normal);
   border-color: var(--interactive-normal);
   position: relative;
@@ -111,7 +111,7 @@ a {
   line-height: 20px;
 }
 
-.user-context-menu .ant-menu .ant-menu-item:hover {
+.custom-context-menu .ant-menu .ant-menu-item:hover {
   background-color: var(--context-menu-background-hover);
   color: var(--context-menu-text-hover);
 }
