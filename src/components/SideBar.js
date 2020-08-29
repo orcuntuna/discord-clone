@@ -9,6 +9,7 @@ import SectionTitle from './SectionTitle'
 import UserCard from './UserCard'
 import QuickUserPanel from './QuickUserPanel'
 import ChevronDownSVG from '../assets/svg/chevron-down.svg'
+import ChannelCard from './ChannelCard'
 
 function SideBar({ type }) {
   const [directMessages, setDirectMessages] = useState([])
@@ -28,9 +29,37 @@ function SideBar({ type }) {
       <React.Fragment>
         <div className={styles.top}>
           <div className={styles.channelInfoBar}>
-            <div className={styles.channelTitle}>Yazılım Kulübü</div>
+            <div className={styles.channelTitle}>Milky Way</div>
             <ChevronDownSVG />
           </div>
+        </div>
+        <div className={styles.channels}>
+          <div className={styles.sectionTitleChannels}>
+            <SectionTitle title={'Text Channels'} icon={<AddSVG />} />
+          </div>
+          <ChannelCard type={'text'} name={'sun'} isActive={true} />
+          <div className={styles.sectionTitleChannels}>
+            <SectionTitle title={'Voice Channels'} icon={<AddSVG />} />
+          </div>
+          <ChannelCard type={'voice'} name={'Mercury'} />
+          <ChannelCard type={'voice'} name={'Venus'} />
+          <ChannelCard type={'voice'} name={'Earth'} />
+          <ChannelCard type={'voice'} name={'Mars'} />
+          <ChannelCard type={'voice'} name={'Jupiter'} />
+          <ChannelCard type={'voice'} name={'Saturn'} />
+          <ChannelCard type={'voice'} name={'Uranus'} />
+          <ChannelCard type={'voice'} name={'Neptun'} />
+          <ChannelCard type={'voice'} name={'Pluto'} />
+        </div>
+        <div className={styles.quickPanel}>
+          <QuickUserPanel
+            user_id={8292}
+            photo={
+              'https://cdn.discordapp.com/avatars/481938565014487041/cdd2b4d773e83c7d74f447ebed7225db.png?size=256'
+            }
+            name={'orçun'}
+            status={'doNotDisturb'}
+          />
         </div>
       </React.Fragment>
     )
