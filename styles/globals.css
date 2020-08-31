@@ -54,6 +54,7 @@
   --deprecated-text-input-border: rgba(0, 0, 0, 0.3);
   --context-menu-background-hover: #5c6fb1;
   --context-menu-text-hover: #ffffff;
+  --message-input-buttons: rgb(170, 170, 170);
 }
 
 html,
@@ -141,4 +142,11 @@ a {
   background-color: var(--scrollbar-auto-thumb);
   border: 4px solid transparent;
   border-radius: 8px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
 }

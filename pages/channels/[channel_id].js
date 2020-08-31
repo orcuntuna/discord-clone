@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Servers from '../../src/components/Servers'
 import SideBar from '../../src/components/SideBar'
+import ChannelContent from '../../src/components/ChannelContent'
 
 function Home() {
   return (
@@ -9,8 +10,11 @@ function Home() {
         <title>Discord Channel</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Servers />
-      <SideBar type={'channel'} />
+      <div className="main">
+        <Servers />
+        <SideBar type={'channel'} />
+        <ChannelContent />
+      </div>
     </div>
   )
 }

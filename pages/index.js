@@ -9,8 +9,10 @@ function Home() {
         <title>Discord Homepage</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Servers />
-      <SideBar type={'me'} />
+      <div className="main">
+        <Servers />
+        <SideBar type={'me'} />
+      </div>
     </div>
   )
 }

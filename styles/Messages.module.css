@@ -1,0 +1,55 @@
+.messages {
+  flex: 1;
+  background: var(--background-primary);
+  overflow-y: scroll;
+}
+
+.new {
+  flex-shrink: 0;
+  padding: 0 16px 25px 16px;
+}
+
+.new .box {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 10px;
+  background-color: var(--channeltextarea-background);
+  resize: none;
+  border: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  color: var(--text-normal);
+  border-radius: 8px;
+}
+
+.new .box input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0;
+  flex: 1;
+  color: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-left: 16px;
+}
+
+.new .box .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--message-input-buttons);
+}
+
+.new .box .buttonRight{
+  padding: 0 6px;
+}
+
+.new .box .button:hover {
+  color: var(--header-primary);
+}
